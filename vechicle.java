@@ -439,10 +439,6 @@ public static void edit1()
         {
             returnbook();
         }
-       /* else if(y1==6)
-        {
-            lost();
-        }*/
         else
         {
             user();
@@ -588,41 +584,6 @@ public static void returnbook()
            user1();
 
 }
-/*public static void lost()
-{
-    System.out.print("\033[H\033[2J");
-    System.out.flush();
-    if(b.size()>0)
-    {
-    System.out.println("ENTER THE BOOK ID ");
-    int ssss=sc.nextInt();
-    int lol=l8.indexOf(ssss);
-    System.out.println("REASON");
-    String pp=sc.next();
-    System.out.println("YOUR BALANCE WILL BE REDUCED IN DEPOSIT");
-    int price=Integer.parseInt(l11.get(lol));
-    int sum=(price*80)/100;
-    int sub=Integer.parseInt(l9.get(lol));
-    int returnme=sub-sum;
-    l9.set(lol,Integer.toString(returnme));
-    l2.remove(lol);
-    l3.remove(lol);
-    b.remove(lol);
-    l10.remove(lol);
-    l12.remove(lol);
-    }
-    else
-    {
-        System.out.println("NO BOOK TO LOSE");
-    }
-
-
-    System.out.println("====PRESS ENTER TO CONTINUE====");
-    sc.nextLine();
-    String s=sc.nextLine();
-    if(s.equals(""))
-    user1();
-}*/
 public static void soldout()
 {
     if(b.size()>0){
